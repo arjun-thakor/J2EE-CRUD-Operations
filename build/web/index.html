@@ -1,0 +1,46 @@
+<!DOCTYPE html>  
+<html>  
+    <head>  
+        <meta charset="ISO-8859-1">  
+        <title>Online Book Store</title>  
+        /* CDN link for Bootstrap CSS */
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <style>
+            form{width: 600px;margin-left: 350px;margin-top: 40px;}
+        </style>
+    </head>  
+    <body>  
+        <form action="SaveServlet" method="post">
+            <h3 class="text-center">Add New Books</h3>
+            <div class="jumbotron alert-success">
+                <div class="container">
+                    <div class="form-group">
+                        
+                        <label for="exampleInputEmail1">Title</label>   /* Label for Title */
+                        
+                        /* Input field for Title */
+                        <input type="text" class="form-control" name="title" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter book name">
+                    
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Author</label> /* Label for Author */
+                        
+                        /* Input field for Author */
+                        <input type="text" class="form-control" name="author" id="exampleInputPassword1" placeholder="Author name">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Price</label> /* Label for Price */
+                        /* Input field for Price */
+                        <input type="text" class="form-control" name="price" id="exampleInputPassword1" placeholder="Price">
+                    </div>
+                    /* Save button for saving books to the database */
+                    <input type="submit" class="btn btn-primary" value="Save Book"/>
+                </div>
+        </form>
+        <br><br><br>
+        /* Link button to view all books from database */
+        /* Directing to the ViewServlet Class */
+        <a href="ViewServlet" class="text-center list-group-item list-group-item-action group-item-primary">View Books</a>
+    </div>
+</body>  
+</html> 
